@@ -1,0 +1,84 @@
+//rotas que nao devem ser manipuladas
+
+
+//fRoute::resource('/admin', 'AdminController');
+/*<!
+Route::get('/cadastrar', function () {
+   Auth::routes();
+    return view('cadastro'); 
+});
+>
+
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+
+
+
+
+//        // Uses Auth Middleware
+//Route::get('/cadastrar', 'NotificacaoController@cadastrar');
+//Route::post('/cadastrar', 'NotificacaoController@cadastrar');
+
+
+
+   // });
+
+
+
+
+
+
+
+
+
+
+// route to show our edit form
+    Route::get('medicamento/edit/{id}', array('as' => 'medicamento.edit', function($id) 
+    {
+
+
+        // return our view and Nerd information
+        return view('medicamento-edit') // pulls app/views/nerd-edit.blade.php
+            ->with('medicamento', Medicamento::find($id));
+    }));
+
+    // route to process the form
+    Route::get('medicamento/edit/{$id}', function() {
+         return view('medicamento-edit')->with('medicamento', Medicamento::find($id)); ;
+
+        // process our form
+    });
+
+
+
+
+
+
+
+
+
+
+//Route::post('/testelista/',  'NotificacaoController@postCadastra');
+
+Route::get('/lista', function () {
+    
+    return view('lista_notificacao');
+});
+
+
+
+Route::get('/completa', function () {
+    
+    return view('autocompleta');
+});
+
+
+
+
+//Route::resource('/notificacao', 'NotificacaoController');
+
+//feitos 01/08
